@@ -91,7 +91,6 @@ input:hover; button:hover {
   font-family : inherit;
   background-color: #000026 ;
   font-size: 1.5em;
-  padding: .5em;
   color: #f6ffb2;
   text-align: left;
   -webkit-transition: all .2s ease;
@@ -122,12 +121,14 @@ input:hover; button:hover {
 
 /* for each option of poet in the list */
 .cs-select span {
-  display: inline-block;
+  display: block;
   position: relative;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
+   margin: .5em;
 }
+
 
 .cs-select .cs-options {
   position: absolute;
@@ -135,9 +136,10 @@ input:hover; button:hover {
 }
 .cs-select ul {
 
-  list-style: none;
+    list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .cs-select li:hover {

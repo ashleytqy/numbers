@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'ApercuPro';
+    src: url('fonts/ApercuPro.eot');
+    src: url('fonts/ApercuPro.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ApercuPro.woff2') format('woff2'),
+         url('fonts/ApercuPro.woff') format('woff'),
+         url('fonts/ApercuPro.ttf') format('truetype'),
+         url('fonts/ApercuPro.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.floating-box {
+    display: inline-block;
+    border: 3px solid white;  
+}
+
+body {
+	font-family: 'Inconsolata' ;
+    background-color: #000026;
+}
+
+
+p {
+    width: 60%;
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f4e2f8;
+}
+
+.searchWrapper {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em; 
+    margin-bottom: 3em;
+}
+
+
+
+input {
+     width: 100px;
+    margin: .5em;
+    padding: .5em;
+    border      : 0;
+  background-color: #000026 ;
+  font-family : inherit;
+  font-size: 1.5em;
+  color: #8D99AE;
+}
+
+button{
+    float: right;
+    width: 100px;
+    font-size: 1.5em;
+  margin      : .5em;
+  padding: .5em;
+  border      : .5em;
+  background  : transparent;
+  font-family : inherit;
+  cursor      : pointer;
+  color: #8D99AE;
+}
+
+button::-moz-focus-inner{
+  padding : 0;
+  border  : 0;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+input:hover; button:hover {
+  color: red;
+}
+
+.cs-select {
+    width: 100px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+     margin-right: auto;
+     margin-left: auto;
+  font-family : inherit;
+  background-color: #000026 ;
+  font-size: 1.5em;
+  padding: .5em;
+  color: #8D99AE;
+  text-align: left;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  position: absolute; /* this is very very important !!!! */
+}
+
+
+/* since ugly original select box is not visible, all of these 3 cs states must be!*/
+.cs-select.cs-active .cs-options {
+  visibility: visible;
+  position: relative;
+}
+.cs-select:focus {
+  outline: none;
+}
+
+/* to not display ugly original select box */
+.cs-select select {
+  display: none;
+}
+
+/* for each option of poet in the list */
+.cs-select span {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cs-select .cs-options {
+  position: absolute;
+  visibility: hidden;
+}
+.cs-select ul {
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-select li:hover {
+  background: #E8C0E9;
+}

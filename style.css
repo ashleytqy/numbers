@@ -12,11 +12,11 @@
 
 .floating-box {
     display: inline-block;
-    border: 3px solid white;  
+    border: 3px solid #a8ffdd;  
 }
 
 body {
-	font-family: 'Inconsolata' ;
+	font-family: 'ApercuPro';
     background-color: #000026;
 }
 
@@ -47,8 +47,14 @@ input {
   background-color: #000026 ;
   font-family : inherit;
   font-size: 1.5em;
-  color: #8D99AE;
+  color: #f6ffb2;
 }
+
+input::-webkit-input-placeholder {
+  color: #f6ffb2;
+  font-family: 'Apercu Pro';
+}
+
 
 button{
     float: right;
@@ -60,7 +66,7 @@ button{
   background  : transparent;
   font-family : inherit;
   cursor      : pointer;
-  color: #8D99AE;
+  color: #f6ffb2;
 }
 
 button::-moz-focus-inner{
@@ -86,7 +92,7 @@ input:hover; button:hover {
   background-color: #000026 ;
   font-size: 1.5em;
   padding: .5em;
-  color: #8D99AE;
+  color: #f6ffb2;
   text-align: left;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -135,5 +141,6 @@ input:hover; button:hover {
 }
 
 .cs-select li:hover {
-  background: #E8C0E9;
+  background: #bcf3ff;
+  color: #000026;
 }
